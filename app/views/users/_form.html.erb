@@ -1,0 +1,50 @@
+﻿<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :login, "Login:" %><br />
+    <%= f.text_field :login %>
+  </div>
+  <div class="field">
+    <%= f.label :password, "Hasło:" %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name, "Imię:"%><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name, "Nazwisko:" %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :street, "Ulica:" %><br />
+    <%= f.text_field :street %>
+  </div>
+  <div class="field">
+    <%= f.label :house, "Nr domu:" %><br />
+    <%= f.text_field :house %>
+  </div>
+  <div class="field">
+    <%= f.label :city, "Miasto:" %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :zip_code, "Kod pocztowy:" %><br />
+    <%= f.text_field :zip_code %>
+  </div>
+    <%= f.hidden_field :role, :value => "User" %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
