@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  badroom: false
+  kitchen: false
+  minibar: false
+  safe: false
+  televisor: false
+  phone: false
+  radio: false
+
+two:
+  badroom: false
+  kitchen: false
+  minibar: false
+  safe: false
+  televisor: false
+  phone: false
+  radio: false
