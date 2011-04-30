@@ -1,0 +1,15 @@
+<h1>Logowanie</h1>
+<h4 style="color: red"><%= @error%></h4>
+<%= form_for(:session, :url => sessions_path) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :haslo %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Zaloguj" %>
+  </div>
+<% end %>

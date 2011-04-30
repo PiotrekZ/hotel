@@ -1,0 +1,15 @@
+<header>
+  <nav class="round">
+    <ul>
+      <li><%= link_to "Strona glowna", root_path %></li>
+      <% if signed_in? %>
+      <li><%= link_to "Profil", current_user %></li>
+	  <li><%= link_to "Dokonaj rezerwacji", 'link' %></li>
+	  <li><%= link_to "Przegladaj rezerwacje", 'link' %></li>
+      <li><%= link_to "Wyloguj", signout_path, :method => :delete %></li>
+      <% else %>
+      <li><%= link_to "Zaloguj", signin_path %></li>
+      <% end %>
+    </ul>
+  </nav>
+</header>
