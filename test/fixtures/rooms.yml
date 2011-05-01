@@ -1,9 +1,23 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  type: MyString
-  price: 
+  typ: 1
+  cena: 1.5
+  lazienka: false
+  aneks_kuchenny: false
+  minibarek: false
+  sejf: false
+  telewizor: false
+  telefon: false
+  radio: false
 
 two:
-  type: MyString
-  price: 
+  typ: 1
+  cena: 1.5
+  lazienka: false
+  aneks_kuchenny: false
+  minibarek: false
+  sejf: false
+  telewizor: false
+  telefon: false
+  radio: false

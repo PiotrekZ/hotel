@@ -10,7 +10,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110428153203) do
+ActiveRecord::Schema.define(:version => 20110501095349) do
+
+  create_table "reservations", :force => true do |t|
+    t.date     "data_poczatkowa"
+    t.date     "data_koncowa"
+    t.integer  "id_klienta"
+    t.integer  "id_pokoju"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "rooms", :force => true do |t|
+    t.integer  "typ"
+    t.float    "cena"
+    t.boolean  "lazienka"
+    t.boolean  "aneks_kuchenny"
+    t.boolean  "minibarek"
+    t.boolean  "sejf"
+    t.boolean  "telewizor"
+    t.boolean  "telefon"
+    t.boolean  "radio"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email"

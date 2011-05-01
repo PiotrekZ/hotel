@@ -1,0 +1,53 @@
+<%= form_for(@room) do |f| %>
+  <% if @room.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@room.errors.count, "error") %> prohibited this room from being saved:</h2>
+
+      <ul>
+      <% @room.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :typ %><br />
+    <%= f.text_field :typ %>
+  </div>
+  <div class="field">
+    <%= f.label :cena %><br />
+    <%= f.text_field :cena %>
+  </div>
+  <div class="field">
+    <%= f.label :lazienka %><br />
+    <%= f.check_box :lazienka %>
+  </div>
+  <div class="field">
+    <%= f.label :aneks_kuchenny %><br />
+    <%= f.check_box :aneks_kuchenny %>
+  </div>
+  <div class="field">
+    <%= f.label :minibarek %><br />
+    <%= f.check_box :minibarek %>
+  </div>
+  <div class="field">
+    <%= f.label :sejf %><br />
+    <%= f.check_box :sejf %>
+  </div>
+  <div class="field">
+    <%= f.label :telewizor %><br />
+    <%= f.check_box :telewizor %>
+  </div>
+  <div class="field">
+    <%= f.label :telefon %><br />
+    <%= f.check_box :telefon %>
+  </div>
+  <div class="field">
+    <%= f.label :radio %><br />
+    <%= f.check_box :radio %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

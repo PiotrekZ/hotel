@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Data poczatkowa:</b>
+  <%= @reservation.data_poczatkowa %>
+</p>
+
+<p>
+  <b>Data koncowa:</b>
+  <%= @reservation.data_koncowa %>
+</p>
+
+<p>
+  <b>Id klienta:</b>
+  <%= @reservation.id_klienta %>
+</p>
+
+<p>
+  <b>Id pokoju:</b>
+  <%= @reservation.id_pokoju %>
+</p>
+
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

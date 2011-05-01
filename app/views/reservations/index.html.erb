@@ -1,0 +1,29 @@
+<h1>Listing reservations</h1>
+
+<table>
+  <tr>
+    <th>Data poczatkowa</th>
+    <th>Data koncowa</th>
+    <th>Id klienta</th>
+    <th>Id pokoju</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reservations.each do |reservation| %>
+  <tr>
+    <td><%= reservation.data_poczatkowa %></td>
+    <td><%= reservation.data_koncowa %></td>
+    <td><%= reservation.id_klienta %></td>
+    <td><%= reservation.id_pokoju %></td>
+    <td><%= link_to 'Show', reservation %></td>
+    <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
+    <td><%= link_to 'Destroy', reservation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reservation', new_reservation_path %>

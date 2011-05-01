@@ -1,9 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  date_start: 2011-04-12
-  date_end: 2011-04-12
+  data_poczatkowa: 2011-05-01
+  data_koncowa: 2011-05-01
+  id_klienta: 1
+  id_pokoju: 1
 
 two:
-  date_start: 2011-04-12
-  date_end: 2011-04-12
+  data_poczatkowa: 2011-05-01
+  data_koncowa: 2011-05-01
+  id_klienta: 1
+  id_pokoju: 1
